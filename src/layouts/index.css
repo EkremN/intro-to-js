@@ -1,30 +1,52 @@
+body{
+  font-size: 120%;
+}
+h1{
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: .85em;
+  line-height:2;
+  padding-left:10px; 
+}
+
+p:nth-child(1){
+  border-left:3px solid #ddd;
+}
+ 
+h2{font-size:1.75em}
+h3{font-size:1.5em}
+h4{font-size:1.25em}
+h5{font-size:1em}
+h6{font-size:1em}
+
+
+.gatsby-resp-image-image {
+  width: 100% !important;
+}
+
+blockquote, code, figure, img, pre, table, tr{page-break-inside:avoid}
+h2, h3, h4, h5, p{orphans:3;widows:3}
+h1, h2, h3, h4, h5{page-break-after:avoid}
+b, strong{font-weight:700}
+em{font-style:italic}
+blockquote, dl, ol, p, table, ul{margin-top:0;margin-bottom:.85em}
+a{color:#4183c4;text-decoration:none;background:0 0}
+
+img{border:0;max-width:100%}
+hr{height:4px;padding:0;margin:1.7em 0;overflow:hidden;background-color:#e7e7e7;border:none}
+hr:after, hr:before{display:table;content:" "}
+hr:after{clear:both} h1, h2, h3,h4, h5, h6{margin-top:1.275em;margin-bottom:.85em;font-weight:700} h1{font-size:2em} h2{font-size:1.75em} h3{font-size:1.5em} h4{font-size:1.25em} h5{font-size:1em} h6{font-size:1em;color:#777} code, pre{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;direction:ltr;margin:0;padding:0;border:none;color:inherit} pre{overflow:auto;word-wrap:normal;margin:0;padding:.85em 1em;margin-bottom:1.275em;background:#f7f7f7} pre>code{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;font-size:.85em;white-space:pre;background:0 0} pre>code:after, pre>code:before{content:normal} code{padding:.2em;margin:0;font-size:.85em;background-color:#f7f7f7} code:after, code:before{letter-spacing:-.2em;content:"\00a0"} table{display:table;width:100%;border-collapse:collapse;border-spacing:0;overflow:auto} table td, table th{padding:6px 13px;border:1px solid #ddd} table tr{background-color:#fff;border-top:1px solid #ccc} table tr:nth-child(2n){background-color:#f8f8f8} table th{font-weight:700} ol, ul{padding:0;margin:0;margin-bottom:.85em;padding-left:2em} ol ol, ol ul, ul ol, ul ul{margin-top:0;margin-bottom:0} ol ol{list-style-type:lower-roman} blockquote{margin:0;margin-bottom:.85em;padding:0 15px;color:#858585;border-left:4px solid #e5e5e5} blockquote:first-child{margin-top:0} blockquote:last-child{margin-bottom:0} dl{padding:0} dl dt{padding:0;margin-top:.85em;font-style:italic;font-weight:700} dl dd{padding:0 .85em;margin-bottom:.85em} dd{margin-left:0} .glossary-term{cursor:help;text-decoration:underline}
+
 .gradient {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f29d9b+0,efdbb6+51,cbe8f0+100 */
-  background: #0074d9; /* Old browsers */
-  background: -moz-linear-gradient(
-    45deg,
-    #0074d9 0%,
-    #39cccc 51%,
-    #0074d9 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    45deg,
-    #0074d9 0%,
-    #39cccc 51%,
-    #0074d9 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    45deg,
-    #0074d9 0%,
-    #39cccc 51%,
-    #0074d9 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr="#0074d9",
-      endColorstr="#39cccc",
-      GradientType=1
-    ); /* IE6-9 fallback on horizontal gradient */
-}
+   background: #0074d9;/* Old browsers */
+   background-color: #c42482;
+   background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 
 .navbar {
   border-bottom: 1px solid #ccc;
@@ -38,6 +60,7 @@
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .navbar-brand.navbar-brand {
@@ -55,11 +78,13 @@
 }
 
 .lesson {
-  margin: 15px;
+  margin: 15px auto;
+  max-width: 900px;
   padding: 15px;
   background-color: #fff;
   border-radius: 8px;
-  overflow: scroll;
+  overflow:auto;
+  
 }
 
 .lesson p {
@@ -69,10 +94,6 @@
 .lesson-links {
   font-size: 18px;
   padding: 15px 0;
-}
-
-.next {
-  float: right;
 }
 
 .prev {
@@ -150,4 +171,34 @@
   width: 100%;
   border: 1px solid #666;
   border-radius: 5px;
+}
+
+/* /////////////////// BUTTON ///////////////////////// */
+
+.next {
+  float: right;
+  background:#c42482;
+  opacity: 0.8;
+}
+
+.prev{
+  background-color: #671878;
+  opacity: 0.8;
+}
+
+.next:hover , .prev:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.next ,.prev{
+  width: 48%;
+  border-radius: 2px;
+  padding: 5px 10px;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.next:hover,.prev:hover{
+  opacity: 1;
 }

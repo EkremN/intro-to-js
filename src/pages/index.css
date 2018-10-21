@@ -61,14 +61,25 @@ body {
   min-width: 300px;
 }
 
+.lesson-content ol li {
+  padding: 5px;
+}
+
+
+
+.lesson-content ol li a {
+  color: #333;
+  letter-spacing: 0.7px;
+}
+
+.lesson-content ol li a:hover {
+  text-decoration: none;
+  color: #999;
+}
+
 .lesson-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.random-tweet {
-  width: 100%;
-  margin-top: 100px;
 }

@@ -11,7 +11,7 @@ import "./index.css";
 const Header = () => (
   <div className="navbar navbar-light gradient">
     <Link to="/" className="navbar-brand">
-      Intro to Web Dev v2
+      Intro to JavaScript
     </Link>
   </div>
 );
@@ -19,7 +19,7 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Intro to Web Dev v2"
+      title="Intro to JavaScript"
       meta={[
         {
           name: "description",
