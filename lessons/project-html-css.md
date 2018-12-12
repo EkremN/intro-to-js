@@ -4,6 +4,8 @@ title: "Project: HTML & CSS"
 path: "/project-html-css"
 ---
 
+This is what I have added to this.
+
 We're going to work on a project together to work on your HTML and CSS skills and so you can see how these puzzle pieces fit together. We are going to make a news site together, similar to The New York Times. Your project will look like this:
 
 ![Similated news site, see example project for HTML and CSS version](./images/html-css-project.png)
