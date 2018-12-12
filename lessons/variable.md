@@ -1,10 +1,52 @@
 ---
-title: "Basic HTML"
+title: "What is Variable"
 order: 3
-path: "/basic-html"
+path: "/variable"
 ---
 
-We're going to start building our very first website. At first our website is going be pretty ugly but it's still going to be functional! We're going to be using the language HTML, or hypertext markup language. This isn't a programming language since it doesn't actually _do_ anything. It's like how English isn't a programming language either: you can't "run" English. Same idea with HTML: you can't "run" HTML. HTML is simply the language and pictures on the page. It's the static (which is another word for unchanging) content.
+Defining data and then manipulating that data has always been the basis of programming. We all have sign up to the certain application. The entry that you make when you type your email and password in any application it is stored in variables. They are saved and later meaningful things are done with those information.
+
+![loginGif](/images/variable/login.gif)
+
+So what is variable? The variable is a container we create that holds whatever data we put into it. They are box filled with stuff, and this stuff can be used over and over again depending on whichever way we choose. We can declare variable on three ways in JavaScript by using `let`, `const`, and `var`. This 3 ways differ in how you can interact with the variable later on. When you write them you are simply telling JavaScript that you are declaring a variable and that you would like to store information.
+
+
+![variable](/images/variable/variable.jpg)
+
+
+Let’s declare variable using LET. Firstly we write let than we name the variable it can can be anything, as long as it's written with letters, numbers, underscores, a dollar-sign, and has no spaces. Java Script is case-sensitive. Upper case “A” and Lower-case “a” are two different variables. Another rule is that you cannot start variable with number…. Now we can assign something to it a value, an object, or something else. That’s done with the equal symbol. And we will store numerical value of 10.
+
+// Let a = 10;
+We will add variable b where we will store value of 5
+// Let b = 5;
+Now we want to get value a and b and store it in SUM.
+Let sum = a + b;
+If you are creating multiple variables you can store then the following way:
+Let a, b, sum;
+a = 10;
+b = 5;
+sum = a + b;
+
+You can also do it this way:
+Let a = 10; b = 5, sum = a + b;
+
+// In the browser show the results;
+If we press F12 on our keyboard and then go to the console. We write a and we will get 10 we write b we get 5 and for the sum we get the sum of 15.
+Now we will talk about the difference between LET, CONST and VAR
+
+
+Let is variable whose value can vary (change) during execution of a program.
+Everyone has a saving / current bank account. From this account you can withdraw money from ATM or deposit money by visiting the bank and the value in your bank account will change.
+
+Const is an entity whose value cannot be changed throughout the execution of program.
+Output will give an error because we cannot change the value of constant variable.
+Suppose we want to create a fixed deposit in bank. This is done to keep a particular amount locked for some specific period. 
+Let’s see an example. I’m in console. Firstly I will declare variable let and give it a name number1 and I will store 100 inside of that. Now I will write number1 and store 200 now we can see that inside of number1 we have 200 instead of 100. 
+Now we will declare another variable using const name is going to be number2 and we will store the value of 50. If we write number2 and try to change this value to 80 we will get an error. So we were not able to change the value of number2 it was declared with const. This is the main difference between let and const. 
+Most JavaScript experts agree that “var” shouldn’t be used. Before new version of JavaScript ES6, var was the only way to declare variables. But var declaration had some drawbacks. The simple answer why not to use “var” is that let and const provides block-scoping that is absent in the function-scoped var. We will talk about scoping in other video. 
+So far we have just used numbers as a value in our variables, JavaScript is a weakly typed language, the meaning of that is we don't have to declare what type of content will go into a variable. We just define it and we can hold a number, a string, an object, a Boolean value, an array, a function, the list goes on. So in the next video we will talk about “data types in JavaScript”
+
+
 
 ## Tags
 
